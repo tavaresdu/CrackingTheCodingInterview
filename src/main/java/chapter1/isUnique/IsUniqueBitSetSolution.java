@@ -4,7 +4,7 @@ import java.util.BitSet;
 
 /**
  * Time Complexity: O(N)
- * Space Complexity: O(N)
+ * Space Complexity: O(1)
  */
 public class IsUniqueBitSetSolution implements IsUniqueSolution {
     private static final char FIRST_LETTER = 'a';

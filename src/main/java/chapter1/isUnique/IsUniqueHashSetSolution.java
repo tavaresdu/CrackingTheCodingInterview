@@ -1,22 +1,22 @@
 package chapter1.isUnique;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Time Complexity: O(N)
  * Space Complexity: O(N)
  */
-public class IsUniqueHashMapSolution implements IsUniqueSolution {
+public class IsUniqueHashSetSolution implements IsUniqueSolution {
 
     @Override
     public boolean isUnique(String str) {
-        Map<Character, Integer> chars = new HashMap<>();
+        Set<Character> chars = new HashSet<>();
         for (int i = 0; i < str.length(); i++) {
-            if (chars.containsKey(str.charAt(i))) {
+            if (chars.contains(str.charAt(i))) {
                 return false;
             }
-            chars.put(str.charAt(i), i);
+            chars.add(str.charAt(i));
         }
         return true;
     }

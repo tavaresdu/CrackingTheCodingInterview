@@ -23,12 +23,12 @@ class CheckPermutationSolutionTest {
     }
 
     @ParameterizedTest
-    @MethodSource("checkPermutationParameters")
+    @MethodSource("parameters")
     void checkPermutation(String str1, String str2, boolean expected, CheckPermutationSolution solution) {
         assertEquals(expected, solution.checkPermutation(str1, str2));
     }
 
-    public static Stream<Arguments> checkPermutationParameters() {
+    public static Stream<Arguments> parameters() {
         List<Arguments> arguments = new LinkedList<>();
         solutions.forEach(impl -> {
             arguments.add(Arguments.of("abcde", "baced", true, impl));

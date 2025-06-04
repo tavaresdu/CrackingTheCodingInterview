@@ -17,18 +17,18 @@ class IsUniqueSolutionTest {
     @BeforeAll
     static void setUp() {
         solutions = List.of(
-                new IsUniqueHashMapSolution(),
+                new IsUniqueHashSetSolution(),
                 new IsUniqueBitSetSolution()
         );
     }
 
     @ParameterizedTest
-    @MethodSource("isUniqueParameters")
+    @MethodSource("parameters")
     void isUnique(String input, boolean expected, IsUniqueSolution solution) {
         assertEquals(expected, solution.isUnique(input));
     }
 
-    public static Stream<Arguments> isUniqueParameters() {
+    public static Stream<Arguments> parameters() {
         List<Arguments> arguments = new LinkedList<>();
         solutions.forEach(impl -> {
             arguments.add(Arguments.of("abcde", true, impl));
