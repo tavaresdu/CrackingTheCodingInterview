@@ -1,5 +1,8 @@
 package chapter1.isUnique;
 
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique.IsUniqueBitSetSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique.IsUniqueHashSetSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique.IsUniqueSolution;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

@@ -1,4 +1,4 @@
-package chapter1.palindromePermutation;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.palindromePermutation;
 
 import java.util.BitSet;
 

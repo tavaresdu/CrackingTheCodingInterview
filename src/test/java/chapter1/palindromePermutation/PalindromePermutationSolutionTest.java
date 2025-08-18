@@ -1,5 +1,8 @@
 package chapter1.palindromePermutation;
 
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.palindromePermutation.PalindromePermutationBitSetSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.palindromePermutation.PalindromePermutationHashMapSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.palindromePermutation.PalindromePermutationSolution;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

@@ -1,4 +1,4 @@
-package chapter1.urlify;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify;
 
 /**
  * Time Complexity: O(N²)

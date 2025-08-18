@@ -1,4 +1,4 @@
-package chapter1.oneAway;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.oneAway;
 
 /**
  * Time Complexity: O(N)
@@ -10,6 +10,10 @@ public class OneAwaySinglePassSolution implements OneAwaySolution {
     public boolean oneAway(String str1, String str2) {
         int i1 = 0, i2 = 0;
         boolean foundOneEdit = false;
+        int strLengthDifference = str1.length() - str2.length();
+        if (strLengthDifference > 1 || strLengthDifference < -1) {
+            return false;
+        }
         while (i1 < str1.length() && i2 < str2.length()) {
             if (str1.charAt(i1) != str2.charAt(i2)) {
                 if (foundOneEdit) {

@@ -1,4 +1,4 @@
-package chapter1.checkPermutation;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation;
 
 import java.util.HashMap;
 import java.util.Map;

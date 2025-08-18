@@ -1,5 +1,8 @@
 package chapter1.urlify;
 
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify.URLifyBruteForceSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify.URLifySolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify.URLifyStartingAtTheEndSolution;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

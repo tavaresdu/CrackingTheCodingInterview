@@ -1,5 +1,7 @@
 package chapter1.oneAway;
 
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.oneAway.OneAwaySinglePassSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.oneAway.OneAwaySolution;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -34,6 +36,8 @@ class OneAwaySolutionTest {
             arguments.add(Arguments.of("pales", "pale", true, impl));
             arguments.add(Arguments.of("pale", "bale", true, impl));
             arguments.add(Arguments.of("pale", "bake", false, impl));
+            arguments.add(Arguments.of("pale", "bake", false, impl));
+            arguments.add(Arguments.of("pale", "paleeeeeeeeeeeeeeeeeeeeeee", false, impl));
         });
         return arguments.stream();
     }

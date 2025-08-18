@@ -1,5 +1,8 @@
 package chapter1.checkPermutation;
 
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation.CheckPermutationHashMapSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation.CheckPermutationSoloHashMapSolution;
+import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation.CheckPermutationSolution;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

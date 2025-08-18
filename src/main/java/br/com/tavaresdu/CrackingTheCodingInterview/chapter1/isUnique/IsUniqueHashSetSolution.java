@@ -1,4 +1,4 @@
-package chapter1.isUnique;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique;
 
 import java.util.HashSet;
 import java.util.Set;
