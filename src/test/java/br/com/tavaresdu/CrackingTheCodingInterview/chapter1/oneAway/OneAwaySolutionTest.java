@@ -1,8 +1,5 @@
-package chapter1.oneAway;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.oneAway;
 
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.oneAway.OneAwaySinglePassSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.oneAway.OneAwaySolution;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -14,14 +11,9 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class OneAwaySolutionTest {
-    private static List<OneAwaySolution> solutions;
-
-    @BeforeAll
-    static void setUp() {
-        solutions = List.of(
-                new OneAwaySinglePassSolution()
-        );
-    }
+    private static final List<OneAwaySolution> solutions = List.of(
+            new OneAwaySinglePassSolution()
+    );
 
     @ParameterizedTest
     @MethodSource("parameters")

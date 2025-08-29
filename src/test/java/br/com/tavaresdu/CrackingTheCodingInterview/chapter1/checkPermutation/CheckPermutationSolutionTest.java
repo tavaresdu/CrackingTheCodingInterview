@@ -1,9 +1,5 @@
-package chapter1.checkPermutation;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation;
 
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation.CheckPermutationHashMapSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation.CheckPermutationSoloHashMapSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.checkPermutation.CheckPermutationSolution;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -15,15 +11,10 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CheckPermutationSolutionTest {
-    private static List<CheckPermutationSolution> solutions;
-
-    @BeforeAll
-    static void setUp() {
-        solutions = List.of(
-                new CheckPermutationHashMapSolution(),
-                new CheckPermutationSoloHashMapSolution()
-        );
-    }
+    private static final List<CheckPermutationSolution> solutions = List.of(
+            new CheckPermutationHashMapSolution(),
+            new CheckPermutationSoloHashMapSolution()
+    );
 
     @ParameterizedTest
     @MethodSource("parameters")

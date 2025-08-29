@@ -1,9 +1,5 @@
-package chapter1.isUnique;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique;
 
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique.IsUniqueBitSetSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique.IsUniqueHashSetSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.isUnique.IsUniqueSolution;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -15,15 +11,10 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class IsUniqueSolutionTest {
-    private static List<IsUniqueSolution> solutions;
-
-    @BeforeAll
-    static void setUp() {
-        solutions = List.of(
-                new IsUniqueHashSetSolution(),
-                new IsUniqueBitSetSolution()
-        );
-    }
+    private static final List<IsUniqueSolution> solutions = List.of(
+            new IsUniqueHashSetSolution(),
+            new IsUniqueBitSetSolution()
+    );
 
     @ParameterizedTest
     @MethodSource("parameters")

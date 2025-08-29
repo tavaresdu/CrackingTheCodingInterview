@@ -1,8 +1,5 @@
-package chapter1.stringCompression;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.stringCompression;
 
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.stringCompression.StringCompressionSinglePassSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.stringCompression.StringCompressionSolution;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -14,14 +11,9 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringCompressionSolutionTest {
-    private static List<StringCompressionSolution> solutions;
-
-    @BeforeAll
-    static void setUp() {
-        solutions = List.of(
-                new StringCompressionSinglePassSolution()
-        );
-    }
+    private static final List<StringCompressionSolution> solutions = List.of(
+            new StringCompressionSinglePassSolution()
+    );
 
     @ParameterizedTest
     @MethodSource("parameters")

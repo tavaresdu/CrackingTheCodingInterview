@@ -1,7 +1,10 @@
 package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.stringCompression;
 
+/**
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ */
 public class StringCompressionSinglePassSolution implements StringCompressionSolution {
-
     @Override
     public String compressString(String str) {
         if (str.length() <= 2) return str;

@@ -1,9 +1,5 @@
-package chapter1.urlify;
+package br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify;
 
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify.URLifyBruteForceSolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify.URLifySolution;
-import br.com.tavaresdu.CrackingTheCodingInterview.chapter1.urlify.URLifyStartingAtTheEndSolution;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -15,15 +11,10 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class URLifySolutionTest {
-    private static List<URLifySolution> solutions;
-
-    @BeforeAll
-    static void setUp() {
-        solutions = List.of(
-                new URLifyBruteForceSolution(),
-                new URLifyStartingAtTheEndSolution()
-        );
-    }
+    private static final List<URLifySolution> solutions = List.of(
+            new URLifyBruteForceSolution(),
+            new URLifyStartingAtTheEndSolution()
+    );
 
     @ParameterizedTest
     @MethodSource("parameters")
